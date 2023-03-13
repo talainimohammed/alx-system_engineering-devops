@@ -1,0 +1,15 @@
+total 40
+drwxr-xr-x 2 root root 245 Mar 13 07:57 .
+drwxr-xr-x 6 root root 121 Mar 13 07:08 ..
+-rw-r--r-- 1 root root   0 Mar 13 07:48 "\?$*'KwaMe'*$?\"
+-rwxrwxrwx 1 root root  32 Mar 13 07:11 0-hello_world
+-rwxr-xr-x 1 root root  25 Mar 13 07:20 1-confused_smiley
+-rwxr-xr-x 1 root root  28 Mar 13 07:26 2-hellofile
+-rwxr-xr-x 1 root root  39 Mar 13 07:28 3-twofiles
+-rwxr-xr-x 1 root root  36 Mar 13 07:31 4-lastlines
+-rwxr-xr-x 1 root root  36 Mar 13 07:32 5-firstlines
+-rwxr-xr-x 1 root root  40 Mar 13 07:41 6-third_line
+-rwxr-xr-x 1 root root  57 Mar 13 07:54 7-file
+-rwxr-xr-x 1 root root  34 Mar 13 07:57 8-cwd_state
+-rw-r--r-- 1 root root   0 Mar 13 07:57 ls_cwd_content
+-rw-r--r-- 1 root root  18 Mar 13 07:09 README.md
