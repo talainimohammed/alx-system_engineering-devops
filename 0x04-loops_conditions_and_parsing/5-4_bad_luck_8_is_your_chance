@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script loops from 1 to 10
+j="0"
+while [ $j -lt 10 ]
+do
+if [ $j -eq 3 ];
+then
+    echo "bad luck"
+elif [ $j -eq 7 ];
+then
+    echo "good luck"
+else
+    echo "Best School"
+fi
+j=$((j+1))
+done

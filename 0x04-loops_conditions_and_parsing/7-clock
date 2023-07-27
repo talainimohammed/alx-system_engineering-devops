@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# A Bash script that displays the time
+
+k="0"
+while [ $k -le 12 ]
+do
+echo "Hour: $k"
+j="1"
+while [ $j -le 59 ]
+do
+echo "$j"
+j=$((j+1))
+done
+k=$((k+1))
+done
