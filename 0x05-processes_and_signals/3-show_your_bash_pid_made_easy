@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# script
 pgrep -l "bash"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# script
 i="1"
 sudo touch /var/run/myscript.pid
 sudo bash -c 'echo $$ > /var/run/myscript.pid'
