@@ -33,7 +33,7 @@ echo "$new_config" > /etc/nginx/sites-available/default
 
 if [ "$(pgrep nginx)" -le 0 ];
 then
-    service nginx start
+    sudo service nginx start
 else
-    service nginx restart
+    sudo service nginx restart
 fi;
