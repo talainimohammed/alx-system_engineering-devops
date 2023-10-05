@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bash script displays DNS records: record type, IP, subdomains
+# Author :talaini displays DNS records: record type, IP, subdomains
 
 print_rec ()
 {
