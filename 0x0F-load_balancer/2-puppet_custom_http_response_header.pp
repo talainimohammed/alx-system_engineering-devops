@@ -1,5 +1,5 @@
 # automate the task of creating a custom HTTP header response
-
+#author: Oumayma mazoz
 # update ubuntu server
 exec { 'update server':
   command  => 'apt-get update',
