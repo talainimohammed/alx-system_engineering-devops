@@ -35,6 +35,7 @@ defaults
 frontend web-front
         bind *:80
         bind *:443 ssl crt /etc/haproxy/certs/www.talaini.tech.pem
+        redirect scheme https code 301 if !{ ssl_fc }
         default_backend web-backend
 
 backend web-backend
