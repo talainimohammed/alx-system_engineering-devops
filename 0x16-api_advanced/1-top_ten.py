@@ -9,9 +9,9 @@ def top_ten(subreddit):
     """returns the top 10 hot posts
     of the subreddit"""
     resp = requests.get("https://www.reddit.com/r/{}/hot.json?limit=10"
-                            .format(subreddit),
-                            headers={"User-Agent": "MyPythonScript"},
-                            allow_redirects=False)
+                        .format(subreddit),
+                        headers={"User-Agent": "MyPythonScript"},
+                        allow_redirects=False)
     if resp.status_code >= 300:
         print('None')
     else:
