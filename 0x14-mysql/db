@@ -31,7 +31,7 @@ PRIMARY KEY (`id_Categorie`)
 );
 CREATE TABLE `Order`
 (
- `id_order`    NOT NULL ,
+ `id_order`   integer NOT NULL ,
  `id_Product` integer NOT NULL ,
  `id_User`    integer NOT NULL ,
 
