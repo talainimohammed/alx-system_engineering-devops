@@ -1,0 +1,68 @@
+CREATE TABLE `User`
+(
+ `id_User`          integer NOT NULL ,
+ `first_name_User`  varchar(45) NOT NULL ,
+ `last_name_User`   varchar(45) NOT NULL ,
+ `dateofbirth_User` date NOT NULL ,
+ `phone`            varchar(45) NOT NULL ,
+ `email`            varchar(100) NOT NULL ,
+ `adresse`          varchar(155) NOT NULL ,
+
+PRIMARY KEY (`id_User`)
+);
+CREATE TABLE `Product`
+(
+ `id_Product`    integer NOT NULL ,
+ `name_Product`  varchar(45) NOT NULL ,
+ `price_product` double NOT NULL ,
+ `id_Categorie`  integer NOT NULL ,
+
+PRIMARY KEY (`id_Product`),
+KEY `FK_1` (`id_Categorie`),
+CONSTRAINT `FK_3` FOREIGN KEY `FK_1` (`id_Categorie`) REFERENCES `Categorie` (`id_Categorie`)
+);
+
+CREATE TABLE `Categorie`
+(
+ `id_Categorie`   integer NOT NULL ,
+ `name_Categorie` varchar(45) NOT NULL ,
+
+PRIMARY KEY (`id_Categorie`)
+);
+CREATE TABLE `Order`
+(
+ `id_order`    NOT NULL ,
+ `id_Product` integer NOT NULL ,
+ `id_User`    integer NOT NULL ,
+
+PRIMARY KEY (`id_order`),
+KEY `FK_1` (`id_Product`),
+CONSTRAINT `FK_1` FOREIGN KEY `FK_1` (`id_Product`) REFERENCES `Product` (`id_Product`),
+KEY `FK_2` (`id_User`),
+CONSTRAINT `FK_2` FOREIGN KEY `FK_2` (`id_User`) REFERENCES `User` (`id_User`)
+);
+
+
+CREATE TABLE `Product_photo`
+(
+ `id_photo`    integer NOT NULL ,
+ `title_photo` varchar(145) NOT NULL ,
+ `id_Product`  integer NOT NULL ,
+
+PRIMARY KEY (`id_photo`),
+KEY `FK_1` (`id_Product`),
+CONSTRAINT `FK_4` FOREIGN KEY `FK_1` (`id_Product`) REFERENCES `Product` (`id_Product`)
+);
+CREATE TABLE `Review`
+(
+ `id_Review`   integer NOT NULL ,
+ `text_review` varchar(45) NOT NULL ,
+ `id_Product`  integer NOT NULL ,
+ `id_User`     integer NOT NULL ,
+
+PRIMARY KEY (`id_Review`),
+KEY `FK_1` (`id_Product`),
+CONSTRAINT `FK_5` FOREIGN KEY `FK_1` (`id_Product`) REFERENCES `Product` (`id_Product`),
+KEY `FK_2` (`id_User`),
+CONSTRAINT `FK_6` FOREIGN KEY `FK_2` (`id_User`) REFERENCES `User` (`id_User`)
+);
